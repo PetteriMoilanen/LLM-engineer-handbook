@@ -1,0 +1,15 @@
+{
+  "name": "LLM Engineer's Handbook",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest", // Or another base image
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "latest", // or "3.10", "3.11", "3.12" etc.
+      "installPylint": true,
+      "installBlack": true
+    }
+  },
+  // Installing the specific python version used in the book
+  "postCreateCommand": "pyenv install 3.11.8" 
+  // You might also add other commands here, like installing project dependencies
+  // "postCreateCommand": "pip install -r requirements.txt"
+}
